@@ -5,6 +5,9 @@ if you are setting this up you need to place a .env file in the app/ directory. 
 | Variable     | Description                                    |
 | ------------ | ---------------------------------------------- |
 | DATABASE_URL | URL for connecting to the application database |
+| RABBIT_USER  | username for accessing rabbit server           |
+| RABBIT_PASS  | password for accessing rabbit server           |
+| RABBIT_HOST  | ip address or hostname of your rabbit server   |
 
 # Database and connections
 
