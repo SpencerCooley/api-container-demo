@@ -18,7 +18,6 @@ async def get_all_widgets(db: Session = Depends(get_db)):
     This will return a list of all widgets in the database.
 
     """
-    # only get the definitions associated to the user.
     widget_list = controllers.widgets.read_all(db)
     return WidgetListResponse(widget_list)
 
@@ -28,7 +27,6 @@ def get_individual_widget(record_id: int, db: Session = Depends(get_db)):
     """
     Will return an individual widget record by id.
     """
-    # you need to handle the case
     widget = controllers.widgets.read(db, record_id)
     if widget == None:
         raise HTTPException(status_code=404, detail="Item not found")

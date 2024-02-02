@@ -6,7 +6,7 @@ from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.ext.mutable import MutableDict
 
 
-# the definition of a thing
+# the definition of a widget
 class Widget(Base):
     __tablename__ = 'widgets'
 
