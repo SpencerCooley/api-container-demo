@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+**/.DS_Store
+
+# Docker
+docker-compose.override.yml
+Dockerfile~
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+*.log
+
+.vscode
+*.env
